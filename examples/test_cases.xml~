@@ -1,0 +1,34 @@
+<!--
+
+PHP fuzz testing framework
+Copyright (C) 2012 Heikki Hellgren <heiccih@gmail.com>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+
+<!-- Test starts here -->
+<!-- Input only correct inputs here so the fuzzer tries to brake things up 
+     on the server side by sending wrong parameters -->
+
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<correct_inputs type="WEBSOCKET">
+    <input format="JSON">{"f" : "handShake", "userId" : 3049, "screen_width" : 1024, "screen_height" : 640,
+                          "language" : "fi", "appVersion" : 2.23, "platform" : "Apple", "appCodeName" : "Firefox",
+                          "cookieEnabled" : true, "appName" : "Navigator", "productSub" : 2, "userAgent" : "Le"}</input>
+    <input format="JSON">{"function" : "login", "username" : "administrator", "password" : "password"}</input>
+    <input format="RAW">Testing</input>
+</correct_inputs>
+
+<!-- End of file -->
