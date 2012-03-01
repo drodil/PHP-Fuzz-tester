@@ -1,0 +1,14 @@
+TODO LIST:
+
+- PHP Fuzz tester testing framework
+- Try out the POST and GET requests
+- CURL support for POST and GET
+- Add more fuzz-tests to all categories
+  - Include vurnelability (?page=http://www.google.com, .htaccess, /etc/passwd)
+  - Port selection for fuzzer
+  - Broken file sending test
+  - Shell injection test
+  - Cross-site scripting
+  - Cookie vulnerability test
+  - URL session identifier vurnelability test
+  - Other malicious HTML/PHP/JS/SQL vurnelabilities
